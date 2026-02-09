@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ImageifyPDF - Free online image converter and PDF maker. Convert JPG, PNG, WebP to PDF and between formats. Fast, secure, no registration required.">
+    <meta name="keywords" content="image converter, jpg to png, image to pdf, pdf converter, online image converter, free converter, webp converter">
+    <meta name="author" content="ImageifyPDF">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="ImageifyPDF - Free Image Converter & PDF Maker">
+    <meta property="og:description" content="Convert images to PDF and between multiple formats instantly. Fast, secure, and completely free!">
+    <meta property="og:image" content="https://yourwebsite.com/og-image.png">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#FF6B6B">
+    <title>ImageifyPDF - Free Image Converter & PDF Maker | Online Tool</title>
+    <link rel="canonical" href="https://yourwebsite.com/">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <i class="fas fa-image"></i>
+                        <span>ImageifyPDF</span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#converter">Converter</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Convert Images to PDF Instantly</h1>
+                    <p>Transform your images into professional PDFs. Convert between JPG, PNG, WebP, and more. Fast, secure, and completely free!</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.getElementById('converter').scrollIntoView({behavior: 'smooth'})">
+                            <i class="fas fa-arrow-right"></i> Start Converting
+                        </button>
+                        <button class="btn btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+                            <i class="fas fa-info-circle"></i> Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-showcase">
+                        <svg viewBox="0 0 400 300" class="svg-image">
+                            <!-- Background -->
+                            <rect width="400" height="300" fill="#f5f5f5"/>
+                            
+                            <!-- Image icon -->
+                            <g transform="translate(50, 40)">
+                                <rect x="0" y="0" width="150" height="120" fill="#e8e8e8" stroke="#FF6B6B" stroke-width="2" rx="5"/>
+                                <circle cx="35" cy="30" r="15" fill="#FF6B6B"/>
+                                <polygon points="0,120 40,70 80,100 150,30 150,120" fill="#FFA500"/>
+                            </g>
+                            
+                            <!-- Arrow -->
+                            <line x1="220" y1="95" x2="280" y2="95" stroke="#FF6B6B" stroke-width="3" marker-end="url(#arrowhead)"/>
+                            <defs>
+                                <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+                                    <polygon points="0 0, 10 3, 0 6" fill="#FF6B6B"/>
+                                </marker>
+                            </defs>
+                            
+                            <!-- PDF icon -->
+                            <g transform="translate(220, 40)">
+                                <rect x="0" y="0" width="150" height="120" fill="#FF6B6B" rx="5"/>
+                                <text x="75" y="50" font-size="40" font-weight="bold" fill="white" text-anchor="middle">PDF</text>
+                                <rect x="10" y="70" width="130" height="8" fill="rgba(255,255,255,0.3)"/>
+                                <rect x="10" y="85" width="130" height="8" fill="rgba(255,255,255,0.3)"/>
+                                <rect x="10" y="100" width="80" height="8" fill="rgba(255,255,255,0.3)"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES PREVIEW ==================== -->
+    <section class="features-preview">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Convert multiple images in seconds with our optimized engine</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>100% Secure</h3>
+                    <p>All processing happens on your device. No uploads to servers</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works seamlessly on phones, tablets, and desktops</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>No Registration</h3>
+                    <p>Start converting immediately without any account</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONVERTER SECTION ==================== -->
+    <section class="converter-section" id="converter">
+        <div class="container">
+            <h2>Image to PDF Converter</h2>
+            <p class="section-subtitle">Convert your images to professional PDF documents</p>
+
+            <div class="converter-wrapper">
+                <!-- Tab Navigation -->
+                <div class="converter-tabs">
+                    <button class="tab-btn active" data-tab="pdf-converter">
+                        <i class="fas fa-file-pdf"></i> Image to PDF
+                    </button>
+                    <button class="tab-btn" data-tab="image-converter">
+                        <i class="fas fa-image"></i> Image Converter
+                    </button>
+                </div>
+
+                <!-- PDF Converter Tab -->
+                <div class="tab-content active" id="pdf-converter">
+                    <div class="upload-container">
+                        <div class="upload-area" id="uploadAreaPdf">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Drop your images here</h3>
+                            <p>or <span style="color: #FF6B6B; font-weight: 600;">click to browse</span></p>
+                            <small>Supported: JPG, PNG, WebP, GIF, BMP (Max 100MB total)</small>
+                            <input type="file" id="fileInputPdf" multiple accept="image/*" style="display: none;">
+                        </div>
+
+                        <div class="converter-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="orientationCheck">
+                                <span>Auto-detect Page Orientation</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="compressionCheck" checked>
+                                <span>Compress PDF</span>
+                            </label>
+                        </div>
+
+                        <div class="progress-container" id="progressContainerPdf" style="display: none;">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFillPdf"></div>
+                            </div>
+                            <p class="progress-text" id="progressTextPdf">0%</p>
+                        </div>
+
+                        <div class="alert alert-success" id="successMsgPdf" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <span id="successMsgPdfText">PDF created successfully!</span>
+                        </div>
+
+                        <div class="alert alert-error" id="errorMsgPdf" style="display: none;">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span id="errorMsgPdfText">An error occurred. Please try again.</span>
+                        </div>
+
+                        <button class="btn btn-primary btn-large" id="convertPdfBtn" disabled>
+                            <i class="fas fa-magic"></i> Convert to PDF
+                        </button>
+
+                        <div id="pdfFilesInfo" class="files-info"></div>
+                    </div>
+                </div>
+
+                <!-- Image Converter Tab -->
+                <div class="tab-content" id="image-converter">
+                    <div class="upload-container">
+                        <div class="upload-area" id="uploadArea">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Drop your images here</h3>
+                            <p>or <span style="color: #FF6B6B; font-weight: 600;">click to browse</span></p>
+                            <small>Supported: JPG, PNG, WebP, GIF, BMP, TIFF (Max 50MB each)</small>
+                            <input type="file" id="fileInput" multiple accept="image/*" style="display: none;">
+                        </div>
+
+                        <div class="converter-options">
+                            <div class="format-selector">
+                                <label>Convert to:</label>
+                                <div class="format-grid">
+                                    <button class="format-btn active" data-format="jpg">JPG</button>
+                                    <button class="format-btn" data-format="png">PNG</button>
+                                    <button class="format-btn" data-format="webp">WebP</button>
+                                    <button class="format-btn" data-format="gif">GIF</button>
+                                    <button class="format-btn" data-format="bmp">BMP</button>
+                                    <button class="format-btn" data-format="tiff">TIFF</button>
+                                </div>
+                            </div>
+
+                            <div class="quality-control">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="qualityCheck">
+                                    <span>Adjust Quality</span>
+                                </label>
+                                <div id="qualitySliderContainer" style="display: none;">
+                                    <input type="range" id="qualitySlider" min="1" max="100" value="80" class="slider">
+                                    <p class="quality-value">Quality: <span id="qualityValue">80</span>%</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-container" id="progressContainer" style="display: none;">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <p class="progress-text" id="progressText">0%</p>
+                        </div>
+
+                        <div class="alert alert-success" id="successMsg" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <span id="successMsgText">Conversion successful!</span>
+                        </div>
+
+                        <div class="alert alert-error" id="errorMsg" style="display: none;">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <span id="errorMsgText">An error occurred. Please try again.</span>
+                        </div>
+
+                        <button class="btn btn-primary btn-large" id="convertBtn" disabled>
+                            <i class="fas fa-magic"></i> Convert Image(s)
+                        </button>
+
+                        <div id="previewArea" style="display: none;">
+                            <h3 style="margin-top: 2rem; color: #FF6B6B;">Preview & Download</h3>
+                            <div id="previewContainer" class="preview-grid"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features-section" id="features">
+        <div class="container">
+            <h2>Why Choose ImageifyPDF?</h2>
+            <p class="section-subtitle">The most reliable image conversion tool available</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3>Privacy First</h3>
+                    <p>Your files never leave your device. All processing happens locally in your browser for maximum security.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Batch Processing</h3>
+                    <p>Convert multiple images at once and download them all together. Save time with bulk conversion.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Full Control</h3>
+                    <p>Adjust compression, quality, and other settings to get exactly what you need.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3>Professional PDFs</h3>
+                    <p>Create high-quality PDF documents from your images with proper formatting.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>No Installation</h3>
+                    <p>Works in any browser. No downloads, no installations, no complex setup required.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Always Free</h3>
+                    <p>No hidden charges, no premium plans, no watermarks. Completely free forever.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-subtitle">Converting is as easy as 1, 2, 3</p>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Upload</h3>
+                    <p>Drag and drop your images or click to browse from your device.</p>
+                    <div class="step-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Customize</h3>
+                    <p>Choose your format, quality settings, and other preferences.</p>
+                    <div class="step-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Download</h3>
+                    <p>Get your converted files instantly. No waiting, no registration.</p>
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SUPPORTED FORMATS ==================== -->
+    <section class="formats-section">
+        <div class="container">
+            <h2>Supported Formats</h2>
+            <p class="section-subtitle">Convert between multiple image formats</p>
+
+            <div class="formats-grid">
+                <div class="format-card">
+                    <div class="format-logo">JPG</div>
+                    <h4>JPEG</h4>
+                    <p>Most common image format. Perfect for photos.</p>
+                </div>
+                <div class="format-card">
+                    <div class="format-logo">PNG</div>
+                    <h4>PNG</h4>
+                    <p>Lossless compression with transparency support.</p>
+                </div>
+                <div class="format-card">
+                    <div class="format-logo">WebP</div>
+                    <h4>WebP</h4>
+                    <p>Modern format with superior compression.</p>
+                </div>
+                <div class="format-card">
+                    <div class="format-logo">GIF</div>
+                    <h4>GIF</h4>
+                    <p>Supports animation and simple graphics.</p>
+                </div>
+                <div class="format-card">
+                    <div class="format-logo">PDF</div>
+                    <h4>PDF</h4>
+                    <p>Professional document format for printing.</p>
+                </div>
+                <div class="format-card">
+                    <div class="format-logo">BMP</div>
+                    <h4>BMP</h4>
+                    <p>Uncompressed bitmap image format.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS ==================== -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <p class="section-subtitle">Join thousands of satisfied users</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Amazing tool! Converted 50+ images to PDF in seconds. No watermarks, super fast!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <small>Marketing Manager</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The best image to PDF converter I've used. Simple, clean interface and it works perfectly!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Mike Chen</h4>
+                            <small>Photographer</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Love that my files stay on my device. Great privacy policy and zero ads interruption!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div>
+                            <h4>Emma Davis</h4>
+                            <small>Privacy Advocate</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FAQ SECTION ==================== -->
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <p class="section-subtitle">Find answers to common questions</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is ImageifyPDF really free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! ImageifyPDF is completely free. We support our service through optional ads. There are no hidden charges or premium plans.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my data safe?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! All processing happens locally in your browser. Your files never leave your device or are uploaded to any server.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What file size limits do you have?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can convert images up to 50MB each for image conversion, and up to 100MB total for PDF conversion. Limits depend on your device's RAM.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I convert multiple images at once?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can upload and convert multiple images simultaneously. Our batch processing feature makes it super easy.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do you keep my files?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. All files are processed in your browser and deleted immediately. We never store your files on our servers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Which image formats are supported?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We support JPG, PNG, WebP, GIF, BMP, TIFF and more. You can convert between any of these formats instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Convert Your Images?</h2>
+                <p>Start converting now. No registration, no credit card required.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('converter').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-arrow-right"></i> Start Converting Now
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>ImageifyPDF</h4>
+                    <p>The easiest way to convert images to PDF and between formats.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#converter">Converter</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="/sitemap.xml">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#">Report a Bug</a></li>
+                        <li><a href="#">Send Feedback</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 ImageifyPDF. All rights reserved. Made with <i class="fas fa-heart"></i> for creators and developers.</p>
+                <p style="font-size: 0.85rem; margin-top: 0.5rem;">No registration required • 100% Secure • Completely Free</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
